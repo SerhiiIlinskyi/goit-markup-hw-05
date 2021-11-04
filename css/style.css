@@ -245,8 +245,18 @@ body {
 }
 
 .backdrop {
-  background-color: var(--brand-color-text);
+  width: 100vw;
+  height: 100vh;
+  position: ;
+  background-color: ;
 }
+
+.is-hidden {
+}
+
+.modal {
+}
+
 /**особенности**/
 .peculiaritiese {
   /**padding-left: 215px;**/
