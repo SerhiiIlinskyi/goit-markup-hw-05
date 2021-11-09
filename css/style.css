@@ -142,7 +142,15 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-
+/* .a::after {
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: var(--brand-color-basic);
+  border-radius: 2px;
+  position: relative;
+  top: 28px;
+} */
 .zwei-button {
   display: flex;
   margin-left: auto;
@@ -324,6 +332,20 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.box-imgbox {
+  margin-bottom: 0;
+  margin-left: 0;
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  background-color: var(--brand-color-link);
+}
+.overlay-a {
+  font-style: normal;
+  text-align: center;
+  font-style: 14px;
+}
+
 /**Наша команда**/
 .ourteam {
   background: var(--brand-color-back);
@@ -482,6 +504,7 @@ body {
   /*  height: 100%; */
   color: #ffffff;
   font-style: 18px;
+  line-height: 1.55;
   background-color: var(--brand-color-basic);
   transform: translatey(100%);
   transition: transform 250ms;
