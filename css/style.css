@@ -212,6 +212,10 @@ body {
   fill: var(--brand-color-text);
 }
 
+.portfolio ::after {
+  box-sizing: border-box;
+}
+
 /**index**/
 /**шапка**/
 .hero {
@@ -260,9 +264,9 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-
-  background-color: var(--brand-color-backdrop-index) /* rgba(0, 0, 0, 0.2) */;
+  background-color: var(--brand-color-backdrop-index);
   opacity: 1;
+  transition: opcity var();
 }
 
 .backdrop.is-hidden {
@@ -279,11 +283,14 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50% -50%);
-  min-width: 528px;
-  min-height: 528px;
+  height: 581px;
+  width: 528px;
+  margin: 0;
   background-color: var(--brand-color-back);
-  opacity: 1;
-  border-radius: 4px;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform var() var();
+  /* opacity: 1; */
+  /* border-radius: 4px; */
 }
 .data-modal-close {
   display: flex;
@@ -347,6 +354,8 @@ body {
   justify-content: space-between;
 }
 .box-imgbox {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 0;
   margin-left: 0;
   position: absolute;
