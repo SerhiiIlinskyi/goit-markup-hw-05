@@ -29,9 +29,9 @@
             <nav class="header-nav">
                 <a href="index.html" class="web-studio-header" target="_blank">Web<span class="heder-web">Studio</span></a>
                 <ul class="drei-button">
-                    <li class="drei-button-item"><a href="index.html" style="text-decoration: none;"><span class="color-block-a">Студия</span></a></li>
-                    <li class="drei-button-item"><a href="portfolio.html" style="text-decoration: none;"><span class="color-block-a">Портфолио</span></a></li>
-                    <li class="drei-button-item"><a href="Контакты" style="text-decoration: none;"><span class="color-block-a">Контакты</span></a></li>
+                    <li class="drei-button-item"><a class="nav-link navigation-link" href="index.html" style="text-decoration: none;"><span class="color-block-a">Студия</span></a></li>
+                    <li class="drei-button-item"><a  href="portfolio.html" style="text-decoration: none;"><span class="color-block-a">Портфолио</span></a></li>
+                    <li class="drei-button-item"><a  href="Контакты" style="text-decoration: none;"><span class="color-block-a">Контакты</span></a></li>
                 </ul>
             </nav>
 
@@ -72,7 +72,7 @@
                 
                 <button data-modal-open class="to-order" type="button">Заказать услугу</button>
 
-                <div class="backdrop is-hidden" data-modal>
+                <!-- <div class="backdrop is-hidden" data-modal>
                     <div class="modal">
                         <p class="">
                             Добрый вечер! Щедрый вечер!
@@ -88,7 +88,7 @@
                             <use href="./img/close.svg#icon-close-black"></use>
                         </svg></button>
                     </div>
-                </div>
+                </div> -->
 
             </div>
         </section>
@@ -171,30 +171,38 @@
                 
                 <ul class="imgbox">
                     <li class="imgbox-a">
+                        
+                        <img src="img/box1.jpg" alt="foto1" width="370" height="294">
+
                         <div class="box-imgbox">
                             <div class="overlay-a">
                                 <p>Десктопные приложения</p>
                             </div>
                         </div>
-                        <img src="img/box1.jpg" alt="foto1" width="370" height="294">
+
+
                     </li>
 
                     <li class="imgbox-a">
+                        
+                        <img src="img/box2.jpg" alt="foto2" width="370" height="294">
+
                         <div class="box-imgbox">
                             <div class="overlay-a">
                                 <p>Мобильные приложения</p>
                             </div>
                         </div>
-                        <img src="img/box2.jpg" alt="foto2" width="370" height="294">
                     </li>
 
                     <li class="imgbox-a">
+                      
+                        <img src="img/box3.jpg" alt="foto3" width="370" height="294">
+
                         <div class="box-imgbox">
                             <div class="overlay-a">
                                 <p>Дизайнерские решения</p>
                             </div>
                         </div>
-                        <img src="img/box3.jpg" alt="foto3" width="370" height="294">
                     </li>
 
                 </ul>
@@ -517,9 +525,26 @@
             </div>
 
         </div>
-
            
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <p class="">
+                Добрый вечер! Щедрый вечер!
+            </p>
+            <ul>
+                <li class="close">
+                    <a href="" class="close-mod">
+    
+                    </a>
+                </li>
+            </ul>
+            <button data-modal-close class="data-modal-close"><svg class="close-modal" width="30" height="30">
+                    <use href="./img/close.svg#icon-close-black"></use>
+                </svg></button>
+        </div>
+    </div>
 
     <script src="./js/modal.js"></script>
 </body>

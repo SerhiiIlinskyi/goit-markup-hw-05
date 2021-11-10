@@ -14,6 +14,7 @@
   --brand-color-schadow: #e5e5e5;
   --brand-color-imgbox: rgb(47, 48, 58, 0.8);
   --brand-color-backdrop-index: rgba(0, 0, 0, 0.2);
+  --brand-color-basic-overlay: rgba(33, 150, 243, 0.9);
 }
 /**изменения цвета кнопки**/
 .header .color-block:hover,
@@ -144,15 +145,7 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-/* .a::after {
-  display: block;
-  width: 100%;
-  height: 4px;
-  background: var(--brand-color-basic);
-  border-radius: 2px;
-  position: relative;
-  top: 28px;
-} */
+
 .zwei-button {
   display: flex;
   margin-left: auto;
@@ -165,6 +158,20 @@ body {
 }
 .zwei-button-item:not(:last-child) {
   margin-right: 50px;
+}
+.nav-link::after {
+  content: "";
+  opacity: 1;
+  position: absolute;
+  display: block;
+  bottom: -32.5px;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: var(--brand-color-basic);
+}
+.navigation-link {
+  position: relative;
 }
 
 /**.icon-header-linc:hover,
@@ -213,7 +220,6 @@ body {
 }
 
 .portfolio ::after {
-  box-sizing: border-box;
 }
 
 /**index**/
@@ -354,18 +360,24 @@ body {
   justify-content: space-between;
 }
 .box-imgbox {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 0;
-  margin-left: 0;
-  position: absolute;
-  width: 370px;
-  height: 70px;
+  position: relative;
+  bottom: 75px;
+  width: 100%;
   background-color: var(--brand-color-imgbox);
+  text-align: center;
 }
 
 .overlay-a {
+  color: var(--brand-color-name);
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
   font-weight: 700;
+  font-size: 14px;
+  line-height: 1.15;
+  text-transform: uppercase;
+
+  /* font-weight: 700;
   font-weight: bold;
   text-transform: uppercase;
   color: var(--brand-color-name);
@@ -373,7 +385,7 @@ body {
   text-align: center;
   font-size: 14px;
   line-height: 16px;
-  margin-top: 27px;
+  margin-top: 27px; */
 }
 
 /**Наша команда**/
@@ -531,11 +543,12 @@ body {
   padding-right: 24px;
   width: 370px;
   height: 294px;
-  /*  height: 100%; */
-  color: #ffffff;
-  font-style: 18px;
-  line-height: 1.55;
-  background-color: var(--brand-color-basic);
+  color: var(--brand-color-name);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  height: 1.55;
+  background-color: var(--brand-color-basic-overlay);
   transform: translatey(100%);
   transition: transform 250ms;
 }
